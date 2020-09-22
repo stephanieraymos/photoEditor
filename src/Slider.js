@@ -4,7 +4,7 @@ export class Slider extends Component {
     render() {
         return (
             <div className="slider-container">
-              Slider  
+                <input type="range" className="slider" />
             </div>
         )
     }
