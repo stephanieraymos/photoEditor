@@ -30,7 +30,11 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    background-color: purple;
+    background-color: hsl(265, 100%, 86%);
+    border-left: 1px solid hsl(265, 100%, 56%);
+    display: flex;
+    font-display: column;
+    align-items: stretch;
 }
 
 .slider-container {
