@@ -1,13 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class Slider extends Component {
-    render() {
+export default function Slider ({ min, max, value, handleChange }) {
         return (
             <div className="slider-container">
-                <input type="range" className="slider" />
+                <input 
+                    type="range" 
+                    className="slider" 
+                    mix={min}
+                    max={max}
+                    value={value}
+                    onChange={handleChange}
+                />
             </div>
         )
     }
-}
-
-export default Slider
