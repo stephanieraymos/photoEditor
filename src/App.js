@@ -94,6 +94,8 @@ function App() {
     const filters = options.map(option => {
       return `${option.property}(${option.value}${option.unit}) `
     })
+
+    return { filter: filters.join(' ') }
   }
 
   return (
