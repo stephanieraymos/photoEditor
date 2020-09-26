@@ -89,6 +89,7 @@ function App() {
             key={index} 
             name={option.name} 
             active={index === selectedOptionIndex}
+            handleClick={() => setSelectedOptionIndex(index)}
           />;
         })}
       </div>
