@@ -77,14 +77,19 @@ const DEFAULT_OPTIONS = [
 ];
 
 function App() {
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(0)
   const [options, setOptions] = useState(DEFAULT_OPTIONS);
-
+  const selectedOption = options[selectedOptionIndex]
   return (
     <div className="container">
       <div className="main-image" />
       <div className="sidebar">
         {options.map((option, index) => {
-          return <SidebarItem key={index} name={option.name} />;
+          return <SidebarItem 
+            key={index} 
+            name={option.name} 
+            active={index === selectedOptionIndex}
+          />;
         })}
       </div>
       <Slider />
